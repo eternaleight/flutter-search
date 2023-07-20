@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_search/screens/search_screen.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
-void main() {
+Future<void> main() async {
+  await dotenv.load(fileName: '.env');
   runApp(const MyApp());
 }
+
+final String token = dotenv.env['QIITA_ACCESS_TOKEN'] ?? '';
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -16,7 +20,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.green,
         fontFamily: 'Hiragino Sans',
         appBarTheme: const AppBarTheme(
-          backgroundColor: Color(0xFF55C500),
+          backgroundColor: Color(0xFF2543ff),
         ),
         textTheme: Theme.of(context).textTheme.apply(
               bodyColor: Colors.white,
