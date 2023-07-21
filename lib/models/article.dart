@@ -19,7 +19,7 @@ class Article {
 
   factory Article.fromJson(Map<String, dynamic> json) {
     return Article(
-      title: json['title,'],
+      title: json['title'],
       user: User.fromJson(json['user']),
       url: json['url'],
       createdAt: DateTime.parse(json['created_at'].toString()),
