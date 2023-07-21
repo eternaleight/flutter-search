@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'package:flutter_search/components/articleContainer.dart';
 import 'package:http/http.dart' as http;
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 
@@ -14,13 +15,37 @@ class SearchScreen extends StatefulWidget {
 
 class _SearchScreenState extends State<SearchScreen> {
   final String token = dotenv.env['QIITA_ACCESS_TOKEN'] ?? '';
+  List<Article> articles = [];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Flutter Search'),
       ),
-      body: Container(),
+      body: Column(
+        children: [
+          Padding(
+            padding: const EdgeInsets.symmetric(
+              vertical: 12,
+              horizontal: 36,
+            ),
+            child: TextField(
+              style: const TextStyle(
+                fontSize: 18,
+                fontFamily: 'Hiragino Sans',
+              ),
+              decoration: const InputDecoration(
+                hintText: '検索ワードを入力して下さい',
+              ),
+              onSubmitted: (String value) async {
+                final results = await searchQiita(value);
+                setState(() => articles = results);
+              },
+            ),
+          ),
+          const ArticleContainer()
+        ],
+      ),
     );
   }
 
