@@ -43,7 +43,6 @@ class _SearchScreenState extends State<SearchScreen> {
                   fontFamily: 'Hiragino Sans',
                   fontSize: 16,
                   color: Colors.black54,
-                  fontStyle: FontStyle.italic,
                 ),
               ),
               onSubmitted: (value) async {
