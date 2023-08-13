@@ -1,7 +1,7 @@
 # flutter_search
 
- <img src="https://github.com/eternaleight/flutter-search/assets/96198088/1fa9ab0d-d6b2-4719-9d19-88d8c49ec32e" width="48%" />
- <img src="https://github.com/eternaleight/flutter-search/assets/96198088/54ccf8a8-524f-4d86-8df8-eadbe3dadfcd" width="48%" />
+ <img src="https://github.com/eternaleight/flutter-search/assets/96198088/2049ea16-3d1a-4420-a94f-f7a4b24e3c1e" width="48%" />
+ <img src="https://github.com/eternaleight/flutter-search/assets/96198088/317129c9-e3bb-4405-9c88-294fb006b806" width="48%" />
 
 A new Flutter project.
 
