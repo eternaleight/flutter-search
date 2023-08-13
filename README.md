@@ -1,5 +1,8 @@
 # flutter_search
 
+ <img src="https://github.com/eternaleight/flutter-search/assets/96198088/1fa9ab0d-d6b2-4719-9d19-88d8c49ec32e" width="48%" />
+ <img src="https://github.com/eternaleight/flutter-search/assets/96198088/54ccf8a8-524f-4d86-8df8-eadbe3dadfcd" width="48%" />
+
 A new Flutter project.
 
 ## Getting Started
